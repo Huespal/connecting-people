@@ -1,0 +1,48 @@
+:root {
+  /* Color */
+  --color-primary: #F5CD72;
+  --color-secondary: #BFB6F2;
+  --color-secondary-dark: #413769;
+  --color-tertiary: #574DB7;
+  --color-tertiary-dark: #2B2650;
+  --color-light: #FFFFFF;
+  --color-dark: #171717;
+  --color-disabled: #D5D2D2F9;
+  --color-success: #A2C79A;
+  --color-error: #C10E0E;
+
+  /* Size */
+  --size-s: 0.5rem;
+  --size-default: 1rem;
+  --size-m: 1.5rem;
+  --size-l: 2rem;
+
+  /* Space */
+  --space-s: 0.5rem;
+  --space-default: 1rem;
+  --space-m: 1.5rem;
+  --space-l: 2rem;
+
+  /* Breakpoint */
+  /* Breakpoints are defined in the theme but not used.
+  They will be used when it will be possible to use CSS variables
+  in media queries (without CSS processors). */
+  /* 480px */
+  --breakpoint-s: 30rem;
+  /* 768px */
+  --breakpoint-m: 48rem;
+  /* 1280px */
+  --breakpoint-default: 80rem;
+
+  /* Radii */
+  --radii-s: 0.5rem;
+  --radii-default: 1rem;
+  --radii-m: 1.5rem;
+  --radii-l: 2rem;
+
+  /* Z Index */
+  --zIndex-hidden: -1;
+  --zIndex-default: 0;
+  --zIndex-m: 1;
+  --zIndex-l: 2;
+}
