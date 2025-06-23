@@ -1,0 +1,39 @@
+.field-checkbox {
+  input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: var(--zIndex-hidden);
+  }
+
+  label {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    cursor: pointer;
+
+    &:before {
+      content: '☐';
+      font-size: var(--size-m);
+      margin-right: var(--space-default);
+      height: 38px;
+    }
+  }
+}
+
+.field-checkbox-disabled {
+
+  label,
+  input {
+    pointer-events: none;
+    opacity: .5;
+  }
+}
+
+.field-checkbox-checked {
+  label:before {
+    content: '☑';
+  }
+}

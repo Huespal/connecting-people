@@ -7,6 +7,9 @@
   --color-tertiary-dark: #2B2650;
   --color-light: #FFFFFF;
   --color-dark: #171717;
+  --color-accent: #90CFFA;
+  --color-accent-secondary: #593E60;
+  --color-accent-tertiary: #342C52;
   --color-disabled: #D5D2D2F9;
   --color-success: #A2C79A;
   --color-error: #C10E0E;
@@ -35,6 +38,7 @@
   --breakpoint-default: 80rem;
 
   /* Radii */
+  --radii-xs: 0.25rem;
   --radii-s: 0.5rem;
   --radii-default: 1rem;
   --radii-m: 1.5rem;

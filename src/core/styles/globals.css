@@ -15,6 +15,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+main {
+  min-height: 100svh;
+  padding: 5rem;
+  transition: padding 0.5s;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -22,6 +28,40 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--color-accent);
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+
+  .error-message {
+    color: var(--color-error);
+  }
+}
+
+input {
+  height: var(--size-l);
+  font-size: large;
+  padding: var(--space-l) var(--space-default);
+  margin-top: var(--space-s);
+  border: 2px solid var(--color-secondary);
+  border-radius: var(--radii-xs);
+
+  &.error {
+    border-color: var(--color-error);
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
 }
