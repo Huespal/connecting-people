@@ -1,0 +1,17 @@
+.mark-list {
+  padding-left: var(--space-m);
+
+  & ::marker {
+    content: '✅ ';
+  }
+
+  li {
+    padding: var(--space-s);
+
+    &:nth-child(odd) {
+      background: linear-gradient(to right, var(--color-accent-secondary),
+          var(--color-accent-secondary));
+    }
+
+  }
+}
