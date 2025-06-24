@@ -1,3 +1,7 @@
 .app-header {
   text-align: center;
+
+  strong {
+    color: var(--color-success);
+  }
 }

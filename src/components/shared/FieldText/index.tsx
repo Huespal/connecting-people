@@ -6,6 +6,7 @@ export interface FieldTextProps {
   id: string;
   name: string;
   value: string;
+  isNumber?: boolean;
   label?: string;
   placeholder?: string;
   error?: string;
@@ -16,6 +17,7 @@ const FieldText = ({
   id,
   name,
   value,
+  isNumber = false,
   label,
   placeholder,
   error,
@@ -27,7 +29,7 @@ const FieldText = ({
       id={id}
       name={name}
       className={error ? 'error' : undefined}
-      type="text"
+      type={isNumber ? 'number' : 'text'}
       placeholder={placeholder}
       value={value}
       onChange={evt => { onChange(evt.target.value); }}

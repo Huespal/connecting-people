@@ -1,7 +1,7 @@
 .connect-page {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: var(--space-l);
+  gap: 5rem;
 
   header {
     grid-column: 2/2;
@@ -22,7 +22,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 48rem) {
   .connect-page {
     display: flex;
     flex-direction: column;
