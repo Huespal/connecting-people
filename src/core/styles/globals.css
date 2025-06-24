@@ -17,8 +17,21 @@ body {
 
 main {
   min-height: 100svh;
-  padding: 5rem;
+  padding: 0 20rem;
   transition: padding 0.5s;
+  align-content: center;
+}
+
+@media (max-width: 80rem) {
+  main {
+    padding: 0 5rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  main {
+    padding: 5rem 2rem;
+  }
 }
 
 * {
@@ -44,6 +57,7 @@ fieldset {
   border: none;
 
   .error-message {
+    font-weight: 700;
     color: var(--color-error);
   }
 }

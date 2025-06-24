@@ -14,7 +14,7 @@ const Header = ({
   <header className="app-header">
     <h1>{title}</h1>
     {subtitle && <p>{subtitle}</p>}
-    {tagline && <p>{tagline}</p>}
+    {tagline && <strong>{tagline}</strong>}
   </header>
 );
 

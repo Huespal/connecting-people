@@ -26,7 +26,7 @@ const EmailForm = ({
     if (response?.error) {
       setError(response.error);
     } else if (to) {
-      router.push(to);
+      router.push(`${to}?email=${email}`);
     }
   }
 
