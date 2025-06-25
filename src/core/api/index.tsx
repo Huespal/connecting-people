@@ -11,8 +11,14 @@ export const api = async <T,>(
     ['accept', 'application/json'],
     ['content-type', 'application/json']
   ];
+
+  const isServer = typeof window === 'undefined';
+  const API_URL = isServer
+    ? process.env.NEXT_PUBLIC_API_URL
+    : 'api';
+
   try {
-    const data = await fetch(`api${url}`, {
+    const data = await fetch(`${API_URL}${url}`, {
       headers,
       method,
       body: JSON.stringify(body)
