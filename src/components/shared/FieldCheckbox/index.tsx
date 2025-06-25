@@ -26,6 +26,7 @@ const FieldCheckbox = ({
   }>
     <input
       type="checkbox"
+      className="hidden"
       {...inputProps}
       onChange={evt => {
         onChange(evt.target.checked);

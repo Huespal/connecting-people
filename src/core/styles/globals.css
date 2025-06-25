@@ -79,3 +79,44 @@ input {
     outline: none;
   }
 }
+
+.hidden {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: var(--zIndex-hidden);
+}
+
+.back-link {
+  position: absolute;
+  top: var(--space-l);
+  left: var(--space-l);
+  width: auto;
+  outline: 2px solid var(--color-secondary);
+  padding: var(--space-default);
+  color: var(--color-secondary);
+  border-radius: var(--radii-xs);
+  font-weight: 500;
+
+  &:hover {
+    color: var(--color-tertiary);
+    background-color: var(--color-secondary);
+  }
+}
+
+@media (max-width: 48rem) {
+  .back-link {
+    visibility: hidden;
+
+    &::before {
+      content: '◄';
+      visibility: visible;
+      border-radius: 100%;
+      background-color: var(--color-secondary);
+      color: var(--color-tertiary);
+      padding: 0.5rem 0.6rem;
+    }
+  }
+}

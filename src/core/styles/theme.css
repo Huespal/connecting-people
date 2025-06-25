@@ -21,6 +21,7 @@
   --size-l: 2rem;
 
   /* Space */
+  --space-xs: 0.25rem;
   --space-s: 0.5rem;
   --space-default: 1rem;
   --space-m: 1.5rem;

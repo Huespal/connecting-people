@@ -28,7 +28,7 @@ const VerifyForm = ({
     evt.preventDefault();
     const response = await validateEmail(email, code);
     if (response?.user_id && to) {
-      router.push(to);
+      router.push(`${to}?userId=${response?.user_id}`);
     } else {
       setError('There has been an error verifying the email.')
     }
@@ -46,7 +46,7 @@ const VerifyForm = ({
         onChange={setCode}
       />
       <p className="form-resend-cta">
-        Didn't get an email? <strong onClick={reSend}>Resend Code</strong>
+        Didn&apos;t get an email? <strong onClick={reSend}>Resend Code</strong>
       </p>
       <Button type="submit" variant="secondary" disabled={!code}>
         Verify

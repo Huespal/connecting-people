@@ -1,5 +1,6 @@
 import { api } from '@/core/api';
 import { APIError } from '@/core/api/types';
+import { ValidateEmailResponse } from '@/domain/auth/types';
 
 export const sendEmail = (
   email: string

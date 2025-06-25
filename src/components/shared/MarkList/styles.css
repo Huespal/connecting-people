@@ -1,5 +1,5 @@
 .mark-list {
-  padding-left: var(--space-m);
+  list-style-position: inside;
 
   & ::marker {
     content: '✅ ';
