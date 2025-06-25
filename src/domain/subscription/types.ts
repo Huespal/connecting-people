@@ -1,10 +1,16 @@
-interface SubscriptionPlan {
+export enum SubscriptionPlanType {
+  year = 'year',
+  month = 'month'
+}
+
+export interface SubscriptionPlan {
   price: number;
   currency: string;
   trial_days: number;
+  type: SubscriptionPlanType;
 }
 
-interface SubscriptionPlansResponse {
+export interface SubscriptionPlansResponse {
   monthly: SubscriptionPlan;
   year: SubscriptionPlan;
 }
