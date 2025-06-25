@@ -8,6 +8,7 @@
   transition: filter .5s;
   padding: var(--space-default);
   width: 100%;
+  max-width: 45rem;
 
   &.btn-primary {
     background-color: var(--color-primary);

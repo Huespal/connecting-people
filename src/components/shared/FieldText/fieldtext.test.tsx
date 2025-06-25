@@ -15,7 +15,7 @@ describe('FieldText', () => {
 
   test('Displays placeholder successfully given the \'placeholder\' property',
     () => {
-      render(<FieldText {...requiredProps} placeholder="Test" />);
+      render(<FieldText {...requiredProps} isNumber placeholder="Test" />);
 
       expect(screen.getByPlaceholderText('Test')).toBeInTheDocument();
     });
