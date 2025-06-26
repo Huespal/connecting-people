@@ -32,6 +32,6 @@ export const api = async <T,>(
       return response;
     }
   } catch (error) {
-    throwError(error);
+    return isServer ? undefined : throwError(error);
   }
 }
